@@ -1,0 +1,25 @@
+{
+  "name": "cordova-headless-browser",
+  "version": "0.0.1",
+  "description": "Cordova plugin that provides a headless browser interface.",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Qroffle Inc. <dev@qroffle.com>",
+  "license": "MIT",
+  "cordova": {
+    "id": "cordova-headless-browser",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-headless-browser" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>cordova-headless-browser</name>
+    <description>Cordova plugin that provides a headless browser interface.</description>
+    <js-module name="cordova-headless-browser" src="www/cordova-headless-browser.js">
+        <clobbers target="CordovaHeadlessBrowser" />
+    </js-module>
+
+    <!--<platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="cordova-headless-browser">
+                <param name="android-package" value="page.two.cordova.CordovaHeadlessBrowser" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/CordovaHeadlessBrowser.java" target-dir="src/page/two/cordova" />
+    </platform>-->
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="CordovaHeadlessBrowser">
+                <param name="ios-package" value="CordovaHeadlessBrowser" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/CordovaHeadlessBrowser.swift" />
+    </platform>
+</plugin>
