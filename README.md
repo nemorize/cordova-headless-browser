@@ -6,7 +6,7 @@ The plugin is not available on npm. You can install it directly from GitHub.
 
 ```sh
 # Install latest head version:
-cordova plugin add https://github.com/2-page/cordova-headless-browser.git
+cordova plugin add https://github.com/nemorize/cordova-headless-browser.git
 
 # Or install from local source:
 cordova plugin add "<path-to-plugin-directory>" --nofetch --nosave --link
